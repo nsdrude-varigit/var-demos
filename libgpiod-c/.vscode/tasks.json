@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "var-build-and-debug",
+        "type": "shell",
+        "command": "sh",
+        "args": [
+            "var-build-and-debug.sh",
+            "192.168.0.118",
+            "hello.bin"
+        ],
+    },{
+        "label": "build",
+        "type": "shell",
+        "command": "make clean; make -j$(nproc)",
+        "problemMatcher": [],
+    }]
+}
